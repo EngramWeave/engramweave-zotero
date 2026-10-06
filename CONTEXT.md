@@ -8,10 +8,12 @@ Users select passages or a group of highlights and comments while reading in Zot
 
 Comments are retained in Source Annotation. Paper full text may provide reference context for compilation but does not expand selected content scope. Capture saves Source first; scheduling and manual compilation belong to EngramWeave, not this plugin.
 
-Capture can offer convenient selection of analysis template presets. Analysis Profile composition, models, and API/Agent execution are owned by Core; the plugin records the user's selection without implementing Review or Relation analysis itself. How selections bind to later profile changes is part of the shared contract, not a plugin-specific default.
+Capture offers selection of Review Analyzer and Relation Analyzer template presets configured beforehand in Desktop. Template content, models, and API/Agent routes are not configured during capture. Selection can change while pending; Core uses the final selection and current configuration. The plugin does not implement either analyzer.
 
 ## Independence after submission
 
 A submitted Source is independent of later Zotero highlight or comment edits. Its continuing connection to the paper is the original location link, not synchronization. New material is submitted as a new Source. Users may explicitly edit or delete old Sources themselves.
 
 PDF and bibliography remain managed by Zotero. Source does not replace the Zotero paper or create a second bibliography system.
+
+Source Record deletion never authorizes deleting the referenced Zotero paper or PDF. Each submitted Record has one Draft work line, while its integrated content can be referenced by multiple formal knowledge files.
