@@ -1,6 +1,6 @@
 # EngramWeave Zotero Context
 
-This document defines intended behavior for the planned Zotero plugin; it does not claim an implemented plugin. Shared semantics belong in [the system context](../doc/CONTEXT.md).
+This document defines intended behavior for the planned Zotero plugin; it does not claim an implemented plugin. Shared semantics belong in [the system context](../engramweave-docs/CONTEXT.md).
 
 ## Explicit selected material capture
 
@@ -16,4 +16,4 @@ A submitted Source is independent of later Zotero highlight or comment edits. It
 
 PDF and bibliography remain managed by Zotero. Source does not replace the Zotero paper or create a second bibliography system.
 
-Source Record deletion never authorizes deleting the referenced Zotero paper or PDF. Each submitted Record has one Draft work line, while its integrated content can be referenced by multiple formal knowledge files.
+Source Record deletion never authorizes deleting the referenced Zotero paper or PDF. An unarchived Record may have multiple Drafts; only one is selected for final integration, after which all related Drafts are marked discarded. Integrated content may be referenced by multiple formal knowledge files.
