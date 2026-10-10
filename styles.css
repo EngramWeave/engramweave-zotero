@@ -1,0 +1,12 @@
+:root { color-scheme: light dark; }
+main { display:block; overflow:auto; padding:20px; font:14px system-ui,sans-serif; color:CanvasText; background:Canvas; }
+h1 { font-size:21px; margin:0 0 12px; } h2 { font-size:16px; margin:18px 0 8px; }
+label { display:grid; gap:6px; margin:12px 0; }
+input,select,textarea { box-sizing:border-box; width:100%; padding:8px; font:inherit; border:1px solid GrayText; border-radius:6px; background:Field; color:FieldText; }
+button { padding:8px 12px; font:inherit; border:1px solid GrayText; border-radius:6px; cursor:pointer; background:ButtonFace; color:ButtonText; }
+button.primary { background:#2467df; color:white; border-color:#2467df; } button:disabled {opacity:.55;cursor:default;}
+.actions {display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
+.muted {color:GrayText;} .error {color:#cf3434;white-space:pre-wrap;overflow-wrap:anywhere;margin:10px 0;} .error:empty {display:none;}
+#selection {max-height:230px;overflow:auto;border:1px solid GrayText;border-radius:6px;padding:10px;} .passage {border-bottom:1px solid GrayText;padding:8px 0;} .passage:last-child {border:0;}
+.excerpt,.comment {white-space:pre-wrap;overflow-wrap:anywhere;} .comment {color:GrayText;}
+#capture-feedback,#destination,#result {overflow-wrap:anywhere;white-space:pre-wrap;} [hidden] {display:none!important;}

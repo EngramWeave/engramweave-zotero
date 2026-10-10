@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" xmlns:html="http://www.w3.org/1999/xhtml" title="EngramWeave · Capture" width="720" height="740">
+  <html:link rel="stylesheet" href="styles.css"/>
+  <html:main id="capture-root">
+    <html:h1>Capture to EngramWeave</html:h1>
+    <html:p id="destination" class="muted">Connecting to Core…</html:p>
+    <html:div id="capture-error" class="error" role="alert"/>
+    <html:button id="connect">Retry connection</html:button>
+    <html:label>Title<html:input id="capture-title" maxlength="500"/></html:label>
+    <html:label>Analysis Profile<html:select id="profile"><html:option value="">Desktop default</html:option></html:select></html:label>
+    <html:h2>Selected material</html:h2><html:section id="selection"/>
+    <html:label>Additional Annotation<html:textarea id="annotation" rows="4" maxlength="64000" placeholder="补充你的理解；所选评论会保留。"/></html:label>
+    <html:p class="muted">一次保存一份 Source。仅保存当前选段和评论；编译由 Core 的明确操作或已有计划执行。</html:p>
+    <html:div class="actions"><html:button id="save" class="primary" disabled="disabled">Save Source</html:button><html:button id="copy">Copy Source Markdown</html:button><html:button id="open" hidden="hidden">Open in Obsidian</html:button><html:button id="close">Close</html:button></html:div>
+    <html:p id="capture-feedback" role="status"/>
+  </html:main>
+</window>
